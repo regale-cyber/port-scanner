@@ -9,6 +9,7 @@ for port in range(1,1025):
     s.settimeout(0.5)
 
     result = s.connect_ex((target, port))
+
     if result == 0:
         print("Port open:", port)
 
